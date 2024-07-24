@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+</head>
+<body>
+    <h1>Basket</h1>
+    <ul>
+        {% for product in basket %}
+            <li>
+                <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}" style="width:100px;height:100px;">
+                {{ product.name }} - ${{ product.price }}
+                <form action="{{ url_for('remove_item', basket_id=basket_id, product_id=product.id) }}" method="post" style="display:inline;">
+                    <button type="submit">Remove</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Products</a>
+</body>
+</html>
