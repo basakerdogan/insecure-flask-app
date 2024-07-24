@@ -12,7 +12,5 @@ Flask
 Installation
 Clone the Repository:
 
-bash
-Kodu kopyala
-git clone https://github.com/yourusername/insecure-flask-app.git
+git clone https://github.com/basakerdogan/insecure-flask-app.git
 cd insecure-flask-app
