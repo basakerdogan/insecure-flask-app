@@ -12,5 +12,7 @@ Flask
 Installation
 Clone the Repository:
 
+```bash
 git clone https://github.com/basakerdogan/insecure-flask-app.git
 cd insecure-flask-app
+```
